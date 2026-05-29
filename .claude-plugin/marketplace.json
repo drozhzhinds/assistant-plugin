@@ -1,0 +1,15 @@
+{
+  "name": "posiflora",
+  "description": "AI-ассистент для команды Posiflora — протокол работы с vault, обработки транскриптов и стартового ритуала.",
+  "owner": {
+    "name": "Dmitriy Drozhzhin",
+    "email": "drozhzhinxstudent@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "posiflora-assistant",
+      "source": "./",
+      "description": "Протокол AI-ассистента: стартовый ритуал, Inbox-проверка, обработка транскриптов, patch-then-confirm."
+    }
+  ]
+}
