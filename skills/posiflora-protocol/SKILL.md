@@ -19,7 +19,6 @@ description: Протокол работы AI-ассистента Posiflora. З
 - `System/Memory.md` — главный контекст (роль, проекты, цели, стиль).
 - `Calls/Summaries/` — саммари звонков и встреч.
 - `Calls/Inbox/` — сюда падают новые транскрипты для обработки.
-- `Calls/Raw/` — обработанные исходные транскрипты (архив).
 - `Sessions/` — саммари сессий.
 - `Tasks/` — задачи, вытащенные из звонков и сессий.
 - `Projects/` — заметки по проектам.
@@ -32,7 +31,7 @@ description: Протокол работы AI-ассистента Posiflora. З
 ## Правило подтверждений (patch-then-confirm)
 
 **Auto-write (без подтверждения):**
-- Новые файлы в `Calls/Summaries/`, `Calls/Raw/`, `Sessions/`, `Tasks/`.
+- Новые файлы в `Calls/Summaries/`, `Sessions/`, `Tasks/`.
 - Новые заметки в `Projects/`, которых ещё не было.
 
 **Только после явного «apply»:**
@@ -63,7 +62,7 @@ description: Протокол работы AI-ассистента Posiflora. З
 Краткая суть:
 - Сырьё лежит в `Calls/Inbox/`.
 - Из каждого транскрипта вытаскиваешь: контекст, решения, договорённости, action items (владелец / что / дедлайн / проект), риски, открытые вопросы, противоречия.
-- Auto-write: саммари в `Calls/Summaries/`, action items пользователя в `Tasks/`, перенос исходника в `Calls/Raw/`.
+- Auto-write: саммари в `Calls/Summaries/`, action items пользователя в `Tasks/`, исходник из `Calls/Inbox/` удаляется.
 - Patch-then-confirm: предложения изменений в Memory.md и в существующие project notes — одним блоком.
 
 ## Что писать, что только читать
