@@ -1,6 +1,6 @@
 {
   "name": "posiflora-assistant",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Протокол работы AI-ассистента для команды Posiflora. Содержит правила стартового ритуала, обработки транскриптов, работы с vault и обновления карточек людей.",
   "author": {
     "name": "Dmitriy Drozhzhin"
